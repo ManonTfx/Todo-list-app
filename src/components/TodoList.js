@@ -31,7 +31,7 @@ const TodoList = ({todos, setTodos, setEditTodo}) => {
                         className={`list ${todo.completed ? "complete" : ""}`} 
                         onChange={(e) => e.preventDefault()}
                     />
-                    <div>
+                    <div className="button-action-todo">
                         <button className="button-complete task-button" onClick={() => handleComplete(todo) }>
                             <i className="fa fa-check-circle"></i>
                         </button>
